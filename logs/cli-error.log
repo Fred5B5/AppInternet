@@ -1,0 +1,20 @@
+2018-10-10 06:35:25 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver.php on line 93
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver.php(93): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1049): Cake\Database\Connection->getSchemaCollection()
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1018): Bake\Shell\Task\ModelTask->listAll()
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\BakeShell.php(252): Bake\Shell\Task\ModelTask->listUnskipped()
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 E:\AMPPS\Ampps\www\AppInternet\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+

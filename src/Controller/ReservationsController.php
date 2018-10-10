@@ -13,6 +13,32 @@ use App\Controller\AppController;
 class ReservationsController extends AppController
 {
 
+	public function isAuthorized($user)
+	{
+		$action = $this->request->getParam('action');
+		// Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
+		// authentifiés sur l'application
+		if (in_array($action, ['add'])) {
+			return true;
+		}
+
+		// Toutes les autres actions nécessitent un slug
+		$userid = $user['id'];
+		if (!$userid) {
+			return false;
+		}
+		
+		if ($this->Auth->user('TypeUsager') == '3') {
+			return true;
+		}
+
+		// On vérifie que l'article appartient à l'utilisateur connecté
+		$id = (int) $this->request->getParam('pass.0');
+		$reservation = $this->Reservations->get($id);
+		
+		return $reservation->user_id === $user['id'];
+	}
+
     /**
      * Index method
      *
@@ -54,6 +80,7 @@ class ReservationsController extends AppController
         $reservation = $this->Reservations->newEntity();
         if ($this->request->is('post')) {
             $reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
+			$reservation->user_id = $this->Auth->user('id');
             if ($this->Reservations->save($reservation)) {
                 $this->Flash->success(__('The reservation has been saved.'));
 
@@ -79,7 +106,11 @@ class ReservationsController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
+			if ($this->Auth->user('TypeUsager') == '3') {
+				$reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
+			} else {
+				$reservation = $this->Reservations->patchEntity($reservation, $this->request->getData(), ['accessibleFields' => ['user_id' => false]]);
+			}
             if ($this->Reservations->save($reservation)) {
                 $this->Flash->success(__('The reservation has been saved.'));
 

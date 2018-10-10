@@ -19,7 +19,6 @@
     <fieldset>
         <legend><?= __('Add Reservation') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('vol_id', ['options' => $vols]);
         ?>
     </fieldset>

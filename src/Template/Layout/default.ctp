@@ -47,7 +47,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         if ($loggeduser) {
                             
 							$user = $loggeduser['username'];?>
-							<li><?php echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'logout']);?></li>
+							<li><?php echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loggeduser['id']]);?></li>
 							
 							<li><a href="/AppInternet/users/logout">Logout</a></li>
                             <?php
@@ -58,6 +58,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 							<?php
                         }
                         ?>
+				<li><a target="" href="/AppInternet">Index</a></li>
                 <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>

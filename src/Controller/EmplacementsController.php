@@ -13,6 +13,34 @@ use App\Controller\AppController;
 class EmplacementsController extends AppController
 {
 
+public function initialize()
+	{
+		parent::initialize();
+		$this->Auth->allow(['index', 'view']);
+	}
+
+		public function isAuthorized($user)
+	{
+		$action = $this->request->getParam('action');
+		// Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
+		// authentifiés sur l'application
+		if (in_array($action, ['index','view'])) {
+			return true;
+		}
+
+		// Toutes les autres actions nécessitent un slug
+		$userid = $user['id'];
+		if (!$userid) {
+			return false;
+		}
+		
+		if ($this->Auth->user('typeuser_id') == '3') {
+			return true;
+		}
+		
+		return false;
+	}
+
     /**
      * Index method
      *

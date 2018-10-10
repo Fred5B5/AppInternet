@@ -33,7 +33,7 @@
             echo $this->Form->control('Nom_Usager');
             echo $this->Form->control('password');
             echo $this->Form->control('typeuser_id', ['options' => $typeusers]);
-            echo $this->Form->control('imageuser_id', ['options' => $imageusers]);
+            echo $this->Form->control('Imageuser_id', ['options' => $imageusers]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

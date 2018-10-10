@@ -20,7 +20,11 @@
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
-    <h3><?= h($user->id) ?></h3>
+    <h3><?= h($user->username) ?></h3>
+	<?php $imageid = $this->Number->format($user->imageuser_id);
+				$images = $Imageusers->toArray();
+				$key = array_search($imageid, $images)?>
+				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
@@ -48,7 +52,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Imageuser') ?></th>
-            <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->id, ['controller' => 'Imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
+            <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->emplacementImage, ['controller' => 'Imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

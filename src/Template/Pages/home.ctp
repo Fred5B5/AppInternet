@@ -4,4 +4,5 @@
 <li><a href="/AppInternet/reservations">Reservations</a></li>
 <li><a href="/AppInternet/emplacements">Emplacements</a></li>
 <li><a href="/AppInternet/typeusers">Type de users</a></li>
+<li><a href="/AppInternet/imageusers">Images</a></li>
 </center>

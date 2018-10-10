@@ -12,6 +12,26 @@ use App\Controller\AppController;
  */
 class VolsController extends AppController
 {
+	public function initialize()
+	{
+		parent::initialize();
+		$this->Auth->allow(['index', 'view']);
+	}
+	public function isAuthorized($user)
+	{
+		$action = $this->request->getParam('action');
+		// Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
+		// authentifiés sur l'application
+		if (in_array($action, ['index','view'])) {
+			return true;
+		}
+		
+		if ($this->Auth->user('typeuser_id') == '3') {
+			return true;
+		}
+		
+		return false;
+	}
 
     /**
      * Index method

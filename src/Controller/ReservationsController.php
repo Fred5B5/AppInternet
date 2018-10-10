@@ -18,7 +18,7 @@ class ReservationsController extends AppController
 		$action = $this->request->getParam('action');
 		// Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
 		// authentifiés sur l'application
-		if (in_array($action, ['add'])) {
+		if (in_array($action, ['add', 'index'])) {
 			return true;
 		}
 

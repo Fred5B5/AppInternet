@@ -28,7 +28,7 @@ class ReservationsController extends AppController
 			return false;
 		}
 		
-		if ($this->Auth->user('TypeUsager') == '3') {
+		if ($this->Auth->user('typeuser_id') == '3') {
 			return true;
 		}
 
@@ -106,7 +106,7 @@ class ReservationsController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-			if ($this->Auth->user('TypeUsager') == '3') {
+			if ($this->Auth->user('typeuser_id') == '3') {
 				$reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
 			} else {
 				$reservation = $this->Reservations->patchEntity($reservation, $this->request->getData(), ['accessibleFields' => ['user_id' => false]]);

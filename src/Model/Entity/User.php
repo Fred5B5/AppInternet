@@ -13,7 +13,7 @@ use Cake\ORM\Entity;
  * @property string $Prenom_Usager
  * @property string $Nom_Usager
  * @property string $password
- * @property int $TypeUsager
+ * @property int $typeuser_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -37,7 +37,7 @@ class User extends Entity
         'Prenom_Usager' => true,
         'Nom_Usager' => true,
         'password' => true,
-        'TypeUsager' => true,
+        'typeuser_id' => true,
         'created' => true,
         'modified' => true,
         'reservations' => true

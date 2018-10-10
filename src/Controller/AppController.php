@@ -72,7 +72,7 @@ class AppController extends Controller
 	public function isAuthorized($user)
 	{
 		// Par défaut, on refuse l'accès.
-		if ($this->Auth->user('TypeUsager') == '3') {
+		if ($this->Auth->user('typeuser_id') == '3') {
 			return true;
 		}
 		

@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Users Model
  *
  * @property \App\Model\Table\TypeusersTable|\Cake\ORM\Association\BelongsTo $Typeusers
+ * @property |\Cake\ORM\Association\BelongsTo $Imageusers
  * @property \App\Model\Table\ReservationsTable|\Cake\ORM\Association\HasMany $Reservations
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
@@ -44,6 +45,10 @@ class UsersTable extends Table
 
         $this->belongsTo('Typeusers', [
             'foreignKey' => 'typeuser_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Imageusers', [
+            'foreignKey' => 'imageuser_id',
             'joinType' => 'INNER'
         ]);
         $this->hasMany('Reservations', [
@@ -107,6 +112,7 @@ class UsersTable extends Table
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['typeuser_id'], 'Typeusers'));
+        $rules->add($rules->existsIn(['imageuser_id'], 'Imageusers'));
 
         return $rules;
     }

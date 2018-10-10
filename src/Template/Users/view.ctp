@@ -49,6 +49,10 @@
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Imageuser Id') ?></th>
+            <td><?= $this->Number->format($user->imageuser_id) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($user->created) ?></td>
         </tr>

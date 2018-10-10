@@ -13,29 +13,6 @@ use App\Controller\AppController;
 class UsersController extends AppController
 {
 
-		public function initialize()
-	{
-		parent::initialize();
-		$this->Auth->allow(['logout']);
-		$this->Auth->allow(['logout', 'add']);
-	}
-		public function login()
-	{
-    if ($this->request->is('post')) {
-        $user = $this->Auth->identify();
-			if ($user) {
-				$this->Auth->setUser($user);
-				return $this->redirect($this->Auth->redirectUrl());
-			}
-			$this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
-		}
-	}
-	public function logout()
-	{
-		$this->Flash->success('Vous avez été déconnecté.');
-		return $this->redirect($this->Auth->logout());
-	}
-
     /**
      * Index method
      *
@@ -76,8 +53,7 @@ class UsersController extends AppController
     {
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
-			$user = $this->Users->patchEntity($user, $this->request->getData());
-			$user->typeuser_id = '2';
+            $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
@@ -102,11 +78,7 @@ class UsersController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            if ($this->Auth->user('typeuser_id') == '3') {
-				$user = $this->Users->patchEntity($user, $this->request->getData());
-			} else {
-				$user = $this->Users->patchEntity($user, $this->request->getData(), ['accessibleFields' => ['typeuser_id' => false]]);
-			}
+            $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

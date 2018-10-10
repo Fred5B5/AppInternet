@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Users Model
  *
  * @property \App\Model\Table\TypeusersTable|\Cake\ORM\Association\BelongsTo $Typeusers
- * @property |\Cake\ORM\Association\BelongsTo $Imageusers
+ * @property \App\Model\Table\ImageusersTable|\Cake\ORM\Association\BelongsTo $Imageusers
  * @property \App\Model\Table\ReservationsTable|\Cake\ORM\Association\HasMany $Reservations
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])

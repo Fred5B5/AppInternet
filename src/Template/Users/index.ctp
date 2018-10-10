@@ -10,6 +10,8 @@
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Imageusers'), ['controller' => 'Imageusers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'Imageusers', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
@@ -42,10 +44,7 @@
                 <td><?= h($user->Nom_Usager) ?></td>
                 <td><?= h($user->password) ?></td>
                 <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
-				<?php $imageid = $this->Number->format($user->imageuser_id);
-				$images = $Imageusers->toArray();
-				$key = array_search($imageid, $images)?>
-				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
+                <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->id, ['controller' => 'Imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
                 <td><?= h($user->created) ?></td>
                 <td><?= h($user->modified) ?></td>
                 <td class="actions">

@@ -13,16 +13,14 @@
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Imageusers'), ['controller' => 'Imageusers', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'Imageusers', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
-    <h3><?= h($user->username) ?></h3>
-	<?php $imageid = $this->Number->format($user->imageuser_id);
-				$images = $Imageusers->toArray();
-				$key = array_search($imageid, $images)?>
-				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
+    <h3><?= h($user->id) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
@@ -49,12 +47,12 @@
             <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
+            <th scope="row"><?= __('Imageuser') ?></th>
+            <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->id, ['controller' => 'Imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Imageuser Id') ?></th>
-            <td><?= $this->Number->format($user->imageuser_id) ?></td>
+            <th scope="row"><?= __('Id') ?></th>
+            <td><?= $this->Number->format($user->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

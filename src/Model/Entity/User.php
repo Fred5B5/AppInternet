@@ -1,7 +1,6 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\Entity;
 
 /**
@@ -19,18 +18,11 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Typeuser $typeuser
+ * @property \App\Model\Entity\Imageuser $imageuser
  * @property \App\Model\Entity\Reservation[] $reservations
  */
 class User extends Entity
 {
-	
-	protected function _setPassword($value)
-    {
-        if (strlen($value)) {
-            $hasher = new DefaultPasswordHasher();
-             return $hasher->hash($value);
-        }
-    }
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -52,6 +44,7 @@ class User extends Entity
         'created' => true,
         'modified' => true,
         'typeuser' => true,
+        'imageuser' => true,
         'reservations' => true
     ];
 

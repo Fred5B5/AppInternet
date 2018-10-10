@@ -16,6 +16,8 @@
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Imageusers'), ['controller' => 'Imageusers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'Imageusers', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
@@ -31,7 +33,7 @@
             echo $this->Form->control('Nom_Usager');
             echo $this->Form->control('password');
             echo $this->Form->control('typeuser_id', ['options' => $typeusers]);
-            echo $this->Form->control('imageuser_id');
+            echo $this->Form->control('imageuser_id', ['options' => $imageusers]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

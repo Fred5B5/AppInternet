@@ -20,6 +20,9 @@ class ReservationsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Users', 'Vols']
+        ];
         $reservations = $this->paginate($this->Reservations);
 
         $this->set(compact('reservations'));
@@ -35,7 +38,7 @@ class ReservationsController extends AppController
     public function view($id = null)
     {
         $reservation = $this->Reservations->get($id, [
-            'contain' => []
+            'contain' => ['Users', 'Vols']
         ]);
 
         $this->set('reservation', $reservation);
@@ -58,7 +61,9 @@ class ReservationsController extends AppController
             }
             $this->Flash->error(__('The reservation could not be saved. Please, try again.'));
         }
-        $this->set(compact('reservation'));
+        $users = $this->Reservations->Users->find('list', ['limit' => 200]);
+        $vols = $this->Reservations->Vols->find('list', ['limit' => 200]);
+        $this->set(compact('reservation', 'users', 'vols'));
     }
 
     /**
@@ -82,7 +87,9 @@ class ReservationsController extends AppController
             }
             $this->Flash->error(__('The reservation could not be saved. Please, try again.'));
         }
-        $this->set(compact('reservation'));
+        $users = $this->Reservations->Users->find('list', ['limit' => 200]);
+        $vols = $this->Reservations->Vols->find('list', ['limit' => 200]);
+        $this->set(compact('reservation', 'users', 'vols'));
     }
 
     /**

@@ -9,8 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Reservations Model
  *
- * @property |\Cake\ORM\Association\BelongsTo $Users
- * @property |\Cake\ORM\Association\BelongsTo $Vols
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\VolsTable|\Cake\ORM\Association\BelongsTo $Vols
  *
  * @method \App\Model\Entity\Reservation get($primaryKey, $options = [])
  * @method \App\Model\Entity\Reservation newEntity($data = null, array $options = [])

@@ -14,6 +14,10 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Vols'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Emplacements'), ['controller' => 'Emplacements', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Emplacement'), ['controller' => 'Emplacements', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="vols form large-9 medium-8 columns content">
@@ -21,8 +25,8 @@
     <fieldset>
         <legend><?= __('Edit Vol') ?></legend>
         <?php
-            echo $this->Form->control('EmplacementDepart');
-            echo $this->Form->control('EmplacementFin');
+            echo $this->Form->control('emplacementdepart_id', ['options' => $emplacements]);
+            echo $this->Form->control('emplacementfin_id', ['options' => $emplacements]);
             echo $this->Form->control('HeureDepart');
             echo $this->Form->control('HeureArriver');
             echo $this->Form->control('PrixEconomique');

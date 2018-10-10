@@ -23,13 +23,12 @@ class ReservationsFixture extends TestFixture
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
-            'vol_key' => ['type' => 'index', 'columns' => ['vol_id'], 'length' => []],
+            'vol_id' => ['type' => 'index', 'columns' => ['vol_id'], 'length' => []],
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'index_reservation' => ['type' => 'unique', 'columns' => ['user_id', 'vol_id'], 'length' => []],
-            'user_key' => ['type' => 'foreign', 'columns' => ['user_id'], 'references' => ['users', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
-            'vol_key' => ['type' => 'foreign', 'columns' => ['vol_id'], 'references' => ['vols', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
+            'user_id' => ['type' => 'unique', 'columns' => ['user_id'], 'length' => []],
+            'vol_id' => ['type' => 'foreign', 'columns' => ['vol_id'], 'references' => ['vols', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -50,8 +49,8 @@ class ReservationsFixture extends TestFixture
                 'id' => 1,
                 'user_id' => 1,
                 'vol_id' => 1,
-                'created' => '2018-10-10 06:56:09',
-                'modified' => '2018-10-10 06:56:09'
+                'created' => '2018-10-10 08:05:50',
+                'modified' => '2018-10-10 08:05:50'
             ],
         ];
         parent::init();

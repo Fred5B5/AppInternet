@@ -20,6 +20,9 @@ class VolsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Emplacements']
+        ];
         $vols = $this->paginate($this->Vols);
 
         $this->set(compact('vols'));
@@ -35,7 +38,7 @@ class VolsController extends AppController
     public function view($id = null)
     {
         $vol = $this->Vols->get($id, [
-            'contain' => []
+            'contain' => ['Emplacements', 'Reservations']
         ]);
 
         $this->set('vol', $vol);
@@ -58,7 +61,8 @@ class VolsController extends AppController
             }
             $this->Flash->error(__('The vol could not be saved. Please, try again.'));
         }
-        $this->set(compact('vol'));
+        $emplacements = $this->Vols->Emplacements->find('list', ['limit' => 200]);
+        $this->set(compact('vol', 'emplacements'));
     }
 
     /**
@@ -82,7 +86,8 @@ class VolsController extends AppController
             }
             $this->Flash->error(__('The vol could not be saved. Please, try again.'));
         }
-        $this->set(compact('vol'));
+        $emplacements = $this->Vols->Emplacements->find('list', ['limit' => 200]);
+        $this->set(compact('vol', 'emplacements'));
     }
 
     /**

@@ -1,0 +1,173 @@
+2018-10-10 07:20:39 Notice: Deprecated (16384): Use Cake\Http\Exception\NotFoundException instead of Cake\Network\Exception\NotFoundException. - E:\AMPPS\Ampps\www\AppInternet\vendor\composer\ClassLoader.php, line: 412
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+include - CORE\src\Network\Exception\NotFoundException.php, line 4
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+include - APP/Template\Pages\home.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 61
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 609
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-10 07:20:50 Notice: Deprecated (16384): Use Cake\Http\Exception\NotFoundException instead of Cake\Network\Exception\NotFoundException. - E:\AMPPS\Ampps\www\AppInternet\vendor\composer\ClassLoader.php, line: 412
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+include - CORE\src\Network\Exception\NotFoundException.php, line 4
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+include - APP/Template\Pages\home.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 61
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 609
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-10 08:22:42 Notice: Notice (8): Trying to get property of non-object in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Vols\view.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-10 08:22:42 Notice: Notice (8): Trying to get property of non-object in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Vols\view.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-10 08:22:49 Notice: Notice (8): Trying to get property of non-object in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Vols\view.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+

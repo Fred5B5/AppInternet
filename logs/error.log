@@ -29,3 +29,1235 @@ Stack Trace:
 #19 {main}
 
 
+2018-10-10 07:20:39 Error: [Cake\Http\Exception\NotFoundException] Please replace src/Template/Pages/home.ctp with your own version or re-enable debug mode.
+Request URL: /
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('E:\\AMPPS\\Ampps\\...', Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('E:\\AMPPS\\Ampps\\...')
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(790): Cake\View\View->render('home', NULL)
+#4 E:\AMPPS\Ampps\www\AppInternet\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\PagesController->display('home')
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-10-10 07:20:50 Error: [Cake\Http\Exception\NotFoundException] Please replace src/Template/Pages/home.ctp with your own version or re-enable debug mode.
+Request URL: /
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('E:\\AMPPS\\Ampps\\...', Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('E:\\AMPPS\\Ampps\\...')
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(790): Cake\View\View->render('home', NULL)
+#4 E:\AMPPS\Ampps\www\AppInternet\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\PagesController->display('home')
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-10-10 07:36:45 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:36:48 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:39:59 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:44:32 Error: Fatal Error (4): syntax error, unexpected ',' in [E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php, line 50]
+Request URL: /vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:44:33 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php line=50 in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:44:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:50) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:44:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:50) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:44:33 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ',' in E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php on line 50
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 07:46:10 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:46:26 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:48:03 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:48:18 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:48:32 Error: [InvalidArgumentException] The Emplacement association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacement')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacement', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:50:50 Error: Fatal Error (4): syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in [E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:50:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php line=48 in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:50:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:50:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:50:50 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php on line 48
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 07:51:02 Error: Fatal Error (4): syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in [E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php line=48 in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:02 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php on line 48
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 07:51:09 Error: Fatal Error (4): syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in [E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php line=48 in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:48) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 07:51:10 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php on line 48
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 07:51:53 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'emplacementdepart_id' doesn't have a default value
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols/add
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(2107): Cake\Database\Query->execute()
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(2001): Cake\ORM\Table->_insert(Object(App\Model\Entity\Vol), Array)
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Vol), Object(ArrayObject))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Vol))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#35 {main}
+
+
+2018-10-10 07:56:23 Error: [InvalidArgumentException] The Emplacements association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacements')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacements', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 07:56:47 Error: [InvalidArgumentException] The Emplacements association is not defined on Vols.
+Request URL: /vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Emplacements')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VolsTable), 'Emplacements', Array, Array)
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VolsTable))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VolsTable))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VolsTable), true)
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\VolsTable), Array, Array)
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VolsTable), Array)
+#20 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\VolsTable))
+#21 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->index()
+#22 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#24 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-10-10 08:02:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Reservation could not be found.
+Exception Attributes: array (
+  'class' => 'Reservation',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /reservation
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-10-10 08:04:03 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacements"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacements')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:06:00 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:06:13 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:06:56 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:07:29 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:07:34 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:08:09 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacementdeparts"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacementdepa...')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:10:03 Error: Fatal Error (4): syntax error, unexpected ',' in [E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php, line 49]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:10:03 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php line=49 in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:10:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:49) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:10:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php:49) in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:10:03 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ',' in E:\AMPPS\Ampps\www\AppInternet\src\Model\Table\VolsTable.php on line 49
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 49)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 08:10:35 Error: [RuntimeException] Table "App\Model\Table\VolsTable" is not associated with "Emplacements"
+Request URL: /vols/add
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\src\Controller\VolsController.php(64): Cake\ORM\Table->__get('Emplacements')
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\VolsController->add()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VolsController))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\AMPPS\Ampps\www\AppInternet\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-10-10 08:26:45 Error: Fatal Error (4): syntax error, unexpected ':', expecting ',' or ';' in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:26:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':', expecting ',' or ';' in E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp on line 29
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 08:27:26 Error: Fatal Error (4): syntax error, unexpected ':', expecting ',' or ';' in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:27:26 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':', expecting ',' or ';' in E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp on line 29
+Request URL: /vols/view/3
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-10 08:29:19 Error: Fatal Error (4): syntax error, unexpected ':', expecting ',' or ';' in [E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp, line 29]
+Request URL: /vols/view/1
+Referer URL: http://localhost/AppInternet/vols
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-10 08:29:19 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':', expecting ',' or ';' in E:\AMPPS\Ampps\www\AppInternet\src\Template\Vols\view.ctp on line 29
+Request URL: /vols/view/1
+Referer URL: http://localhost/AppInternet/vols
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\AMPPS\\Ampps\\...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

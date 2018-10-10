@@ -7,13 +7,16 @@ use Cake\ORM\Entity;
  * Vol Entity
  *
  * @property int $id
- * @property int $EmplacementDepart
- * @property int $EmplacementFin
+ * @property int $emplacementdepart_id
+ * @property int $emplacementfin_id
  * @property \Cake\I18n\FrozenTime $HeureDepart
  * @property \Cake\I18n\FrozenTime $HeureArriver
  * @property int $PrixEconomique
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Emplacement $emplacement
+ * @property \App\Model\Entity\Reservation[] $reservations
  */
 class Vol extends Entity
 {
@@ -28,12 +31,14 @@ class Vol extends Entity
      * @var array
      */
     protected $_accessible = [
-        'EmplacementDepart' => true,
-        'EmplacementFin' => true,
+        'emplacementdepart_id' => true,
+        'emplacementfin_id' => true,
         'HeureDepart' => true,
         'HeureArriver' => true,
         'PrixEconomique' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'emplacement' => true,
+        'reservations' => true
     ];
 }

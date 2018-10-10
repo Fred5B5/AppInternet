@@ -8,6 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Reservation'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Vols'), ['controller' => 'Vols', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Vol'), ['controller' => 'Vols', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="reservations index large-9 medium-8 columns content">
@@ -27,8 +31,8 @@
             <?php foreach ($reservations as $reservation): ?>
             <tr>
                 <td><?= $this->Number->format($reservation->id) ?></td>
-                <td><?= $this->Number->format($reservation->user_id) ?></td>
-                <td><?= $this->Number->format($reservation->vol_id) ?></td>
+                <td><?= $reservation->has('user') ? $this->Html->link($reservation->user->id, ['controller' => 'Users', 'action' => 'view', $reservation->user->id]) : '' ?></td>
+                <td><?= $reservation->has('vol') ? $this->Html->link($reservation->vol->id, ['controller' => 'Vols', 'action' => 'view', $reservation->vol->id]) : '' ?></td>
                 <td><?= h($reservation->created) ?></td>
                 <td><?= h($reservation->modified) ?></td>
                 <td class="actions">

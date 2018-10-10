@@ -9,7 +9,9 @@ use Cake\Validation\Validator;
 /**
  * Vols Model
  *
- * @property |\Cake\ORM\Association\HasMany $Reservations
+ * @property \App\Model\Table\EmplacementsTable|\Cake\ORM\Association\BelongsTo $Emplacements
+ * @property \App\Model\Table\EmplacementsTable|\Cake\ORM\Association\BelongsTo $Emplacements
+ * @property \App\Model\Table\ReservationsTable|\Cake\ORM\Association\HasMany $Reservations
  *
  * @method \App\Model\Entity\Vol get($primaryKey, $options = [])
  * @method \App\Model\Entity\Vol newEntity($data = null, array $options = [])
@@ -41,6 +43,14 @@ class VolsTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Emplacements', [
+            'foreignKey' => 'emplacementdepart_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Emplacements', [
+            'foreignKey' => 'emplacementfin_id',
+            'joinType' => 'INNER'
+        ]);
         $this->hasMany('Reservations', [
             'foreignKey' => 'vol_id'
         ]);
@@ -59,16 +69,6 @@ class VolsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->integer('EmplacementDepart')
-            ->requirePresence('EmplacementDepart', 'create')
-            ->notEmpty('EmplacementDepart');
-
-        $validator
-            ->integer('EmplacementFin')
-            ->requirePresence('EmplacementFin', 'create')
-            ->notEmpty('EmplacementFin');
-
-        $validator
             ->dateTime('HeureDepart')
             ->requirePresence('HeureDepart', 'create')
             ->notEmpty('HeureDepart');
@@ -83,5 +83,20 @@ class VolsTable extends Table
             ->allowEmpty('PrixEconomique');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['emplacementdepart_id'], 'Emplacements'));
+        $rules->add($rules->existsIn(['emplacementfin_id'], 'Emplacements'));
+
+        return $rules;
     }
 }

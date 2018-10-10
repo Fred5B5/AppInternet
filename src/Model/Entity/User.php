@@ -1,6 +1,7 @@
 <?php
 namespace App\Model\Entity;
 
+use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\Entity;
 
 /**
@@ -15,6 +16,8 @@ use Cake\ORM\Entity;
  * @property int $TypeUsager
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Reservation[] $reservations
  */
 class User extends Entity
 {
@@ -36,7 +39,8 @@ class User extends Entity
         'password' => true,
         'TypeUsager' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'reservations' => true
     ];
 
     /**

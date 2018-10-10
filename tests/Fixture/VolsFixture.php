@@ -18,15 +18,21 @@ class VolsFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 16, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'EmplacementDepart' => ['type' => 'integer', 'length' => 128, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'EmplacementFin' => ['type' => 'integer', 'length' => 128, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'emplacementdepart_id' => ['type' => 'integer', 'length' => 16, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'emplacementfin_id' => ['type' => 'integer', 'length' => 16, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'HeureDepart' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'HeureArriver' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'PrixEconomique' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        '_indexes' => [
+            'emplacementdepart_id' => ['type' => 'index', 'columns' => ['emplacementdepart_id'], 'length' => []],
+            'emplacementfin_ids' => ['type' => 'index', 'columns' => ['emplacementfin_id'], 'length' => []],
+        ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'emplacementdepart_id' => ['type' => 'foreign', 'columns' => ['emplacementdepart_id'], 'references' => ['emplacements', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
+            'emplacementfin_ids' => ['type' => 'foreign', 'columns' => ['emplacementfin_id'], 'references' => ['emplacements', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -45,13 +51,13 @@ class VolsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'EmplacementDepart' => 1,
-                'EmplacementFin' => 1,
-                'HeureDepart' => '2018-10-10 06:56:02',
-                'HeureArriver' => '2018-10-10 06:56:02',
+                'emplacementdepart_id' => 1,
+                'emplacementfin_id' => 1,
+                'HeureDepart' => '2018-10-10 08:11:50',
+                'HeureArriver' => '2018-10-10 08:11:50',
                 'PrixEconomique' => 1,
-                'created' => '2018-10-10 06:56:02',
-                'modified' => '2018-10-10 06:56:02'
+                'created' => '2018-10-10 08:11:50',
+                'modified' => '2018-10-10 08:11:50'
             ],
         ];
         parent::init();

@@ -16,7 +16,9 @@ class VolsControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.vols'
+        'app.vols',
+        'app.emplacements',
+        'app.reservations'
     ];
 
     /**

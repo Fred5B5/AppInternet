@@ -14,6 +14,10 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Reservations'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Vols'), ['controller' => 'Vols', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Vol'), ['controller' => 'Vols', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="reservations form large-9 medium-8 columns content">
@@ -21,8 +25,8 @@
     <fieldset>
         <legend><?= __('Edit Reservation') ?></legend>
         <?php
-            echo $this->Form->control('user_id');
-            echo $this->Form->control('vol_id');
+            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('vol_id', ['options' => $vols]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -8,6 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Vol'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Emplacements'), ['controller' => 'Emplacements', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Emplacement'), ['controller' => 'Emplacements', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="vols index large-9 medium-8 columns content">
@@ -16,8 +20,8 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('EmplacementDepart') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('EmplacementFin') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('emplacementdepart_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('emplacementfin_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('HeureDepart') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('HeureArriver') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('PrixEconomique') ?></th>
@@ -30,8 +34,8 @@
             <?php foreach ($vols as $vol): ?>
             <tr>
                 <td><?= $this->Number->format($vol->id) ?></td>
-                <td><?= $this->Number->format($vol->EmplacementDepart) ?></td>
-                <td><?= $this->Number->format($vol->EmplacementFin) ?></td>
+                <td><?= $this->Number->format($vol->emplacementdepart_id) ? $this->Html->link($vol->emplacementdepart_id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementdepart_id]) : '' ?></td>></td>
+                <td><?= $vol->has('emplacement') ? $this->Html->link($vol->emplacement->id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacement->id]) : '' ?></td>
                 <td><?= h($vol->HeureDepart) ?></td>
                 <td><?= h($vol->HeureArriver) ?></td>
                 <td><?= $this->Number->format($vol->PrixEconomique) ?></td>

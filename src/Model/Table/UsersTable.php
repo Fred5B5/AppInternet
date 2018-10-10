@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
- * @property |\Cake\ORM\Association\HasMany $Reservations
+ * @property \App\Model\Table\ReservationsTable|\Cake\ORM\Association\HasMany $Reservations
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])

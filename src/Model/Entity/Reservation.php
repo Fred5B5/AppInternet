@@ -11,6 +11,9 @@ use Cake\ORM\Entity;
  * @property int $vol_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Vol $vol
  */
 class Reservation extends Entity
 {
@@ -28,6 +31,8 @@ class Reservation extends Entity
         'user_id' => true,
         'vol_id' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'user' => true,
+        'vol' => true
     ];
 }

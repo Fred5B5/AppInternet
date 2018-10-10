@@ -76,7 +76,8 @@ class UsersController extends AppController
     {
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
+			$user = $this->Users->patchEntity($user, $this->request->getData());
+			$user->typeuser_id = '2';
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
@@ -101,7 +102,11 @@ class UsersController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Auth->user('typeuser_id') == '3') {
+				$user = $this->Users->patchEntity($user, $this->request->getData());
+			} else {
+				$user = $this->Users->patchEntity($user, $this->request->getData(), ['accessibleFields' => ['typeuser_id' => false]]);
+			}
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

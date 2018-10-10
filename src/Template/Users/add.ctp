@@ -24,7 +24,6 @@
             echo $this->Form->control('Prenom_Usager');
             echo $this->Form->control('Nom_Usager');
             echo $this->Form->control('password');
-            echo $this->Form->control('typeuser_id', ['options' => $typeusers]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

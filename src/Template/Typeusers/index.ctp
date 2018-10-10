@@ -17,7 +17,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('TypeUsager') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
@@ -25,7 +24,6 @@
         <tbody>
             <?php foreach ($typeusers as $typeuser): ?>
             <tr>
-                <td><?= $this->Number->format($typeuser->id) ?></td>
                 <td><?= h($typeuser->TypeUsager) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $typeuser->id]) ?>

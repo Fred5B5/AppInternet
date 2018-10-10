@@ -42,7 +42,10 @@
                 <td><?= h($user->Nom_Usager) ?></td>
                 <td><?= h($user->password) ?></td>
                 <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
-                <td><?= $this->Number->format($user->imageuser_id) ?></td>
+				<?php $imageid = $this->Number->format($user->imageuser_id);
+				$images = $Imageusers->toArray();
+				$key = array_search($imageid, $images)?>
+				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
                 <td><?= h($user->created) ?></td>
                 <td><?= h($user->modified) ?></td>
                 <td class="actions">

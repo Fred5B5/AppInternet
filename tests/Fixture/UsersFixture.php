@@ -23,11 +23,15 @@ class UsersFixture extends TestFixture
         'Prenom_Usager' => ['type' => 'string', 'length' => 48, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'Nom_Usager' => ['type' => 'string', 'length' => 48, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'password' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'TypeUsager' => ['type' => 'integer', 'length' => 3, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'typeuser_id' => ['type' => 'integer', 'length' => 16, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        '_indexes' => [
+            'typeuser_id' => ['type' => 'index', 'columns' => ['typeuser_id'], 'length' => []],
+        ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'typeuser_id' => ['type' => 'foreign', 'columns' => ['typeuser_id'], 'references' => ['typeusers', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -51,9 +55,9 @@ class UsersFixture extends TestFixture
                 'Prenom_Usager' => 'Lorem ipsum dolor sit amet',
                 'Nom_Usager' => 'Lorem ipsum dolor sit amet',
                 'password' => 'Lorem ipsum dolor sit amet',
-                'TypeUsager' => 1,
-                'created' => '2018-10-10 08:08:06',
-                'modified' => '2018-10-10 08:08:06'
+                'typeuser_id' => 1,
+                'created' => '2018-10-10 11:25:15',
+                'modified' => '2018-10-10 11:25:15'
             ],
         ];
         parent::init();

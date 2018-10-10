@@ -14,6 +14,10 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">
@@ -26,7 +30,7 @@
             echo $this->Form->control('Prenom_Usager');
             echo $this->Form->control('Nom_Usager');
             echo $this->Form->control('password');
-            echo $this->Form->control('TypeUsager');
+            echo $this->Form->control('typeuser_id', ['options' => $typeusers]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

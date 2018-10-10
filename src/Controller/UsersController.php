@@ -12,14 +12,24 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
-	
-	public function initialize()
+
+		public function initialize()
 	{
 		parent::initialize();
 		$this->Auth->allow(['logout']);
 		$this->Auth->allow(['logout', 'add']);
 	}
-
+		public function login()
+	{
+    if ($this->request->is('post')) {
+        $user = $this->Auth->identify();
+			if ($user) {
+				$this->Auth->setUser($user);
+				return $this->redirect($this->Auth->redirectUrl());
+			}
+			$this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+		}
+	}
 	public function logout()
 	{
 		$this->Flash->success('Vous avez été déconnecté.');
@@ -33,6 +43,9 @@ class UsersController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Typeusers']
+        ];
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));
@@ -48,7 +61,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => []
+            'contain' => ['Typeusers', 'Reservations']
         ]);
 
         $this->set('user', $user);
@@ -71,7 +84,8 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $this->set(compact('user'));
+        $typeusers = $this->Users->Typeusers->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'typeusers'));
     }
 
     /**
@@ -95,7 +109,8 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $this->set(compact('user'));
+        $typeusers = $this->Users->Typeusers->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'typeusers'));
     }
 
     /**
@@ -117,16 +132,4 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-	
-	public function login()
-{
-    if ($this->request->is('post')) {
-        $user = $this->Auth->identify();
-        if ($user) {
-            $this->Auth->setUser($user);
-            return $this->redirect($this->Auth->redirectUrl());
-        }
-        $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
-    }
-}
 }

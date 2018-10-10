@@ -1,7 +1,6 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\Entity;
 
 /**
@@ -17,6 +16,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
+ * @property \App\Model\Entity\Typeuser $typeuser
  * @property \App\Model\Entity\Reservation[] $reservations
  */
 class User extends Entity
@@ -40,6 +40,7 @@ class User extends Entity
         'typeuser_id' => true,
         'created' => true,
         'modified' => true,
+        'typeuser' => true,
         'reservations' => true
     ];
 
@@ -51,13 +52,4 @@ class User extends Entity
     protected $_hidden = [
         'password'
     ];
-	
-	protected function _setPassword($value)
-    {
-        if (strlen($value)) {
-            $hasher = new DefaultPasswordHasher();
-
-            return $hasher->hash($value);
-        }
-    }
 }

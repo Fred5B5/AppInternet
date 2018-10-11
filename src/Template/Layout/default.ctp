@@ -66,6 +66,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
+	<?php if ($loggeduser['typeuser_id'] == '1') { 
+	
+		echo '<span style="color:red;text-align:center;">Veuillez allez confirmer votre usager pour avoir les acces du Super Utilisateur!</span>';
+	
+	} ?>
         <?= $this->fetch('content') ?>
     </div>
     <footer>

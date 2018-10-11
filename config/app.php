@@ -201,13 +201,13 @@ return [
             /*
              * The following keys are used in SMTP transports:
              */
-            'host' => 'localhost',
+            'host' => 'smtp.live.com',
             'port' => 25,
             'timeout' => 30,
-            'username' => null,
-            'password' => null,
+            'username' => 'fred909@live.ca',
+            'password' => 'Jyp_909090',
             'client' => null,
-            'tls' => null,
+            'tls' => true,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
@@ -223,8 +223,8 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+            'transport' => 'hotmail',
+            'from' => 'fred909@live.ca',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],

@@ -2,6 +2,17 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
+use Cake\Utility\Text;
+
+Email::setConfigTransport('hotmail', [
+    'host' => 'smtp.live.com',
+    'port' => 25,
+    'username' => 'fred909@live.ca',
+    'password' => 'Jyp_909090',
+    'className' => 'Smtp',
+	'tls' => true
+]);
 
 /**
  * Users Controller
@@ -101,7 +112,10 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
-			$user->typeuser_id = '2';
+			$user->typeuser_id = '1';
+			$user->codeConfirmation = Text::uuid();
+			$email = new Email('default');
+			$email->to($user->email)->subject('Essai de CakePHP Mailer')->send($user->codeConfirmation);
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

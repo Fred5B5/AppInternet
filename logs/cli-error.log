@@ -18,3 +18,45 @@ Stack Trace:
 #15 {main}
 
 
+2018-10-11 03:29:45 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sitereservationvol.articles' doesn't exist in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Articles')
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Articles')
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Articles')
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 E:\AMPPS\Ampps\www\AppInternet\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-11 03:30:33 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sitereservationvol.sitereservationvols' doesn't exist in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Sitereservation...')
+#10 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Sitereservation...')
+#11 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('sitereservation...')
+#12 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 E:\AMPPS\Ampps\www\AppInternet\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+

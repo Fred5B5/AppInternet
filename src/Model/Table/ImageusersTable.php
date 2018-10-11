@@ -39,6 +39,7 @@ class ImageusersTable extends Table
         $this->hasMany('Users', [
             'foreignKey' => 'imageuser_id'
         ]);
+		$this->addBehavior('Timestamp');
     }
 
     /**

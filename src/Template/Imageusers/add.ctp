@@ -12,12 +12,13 @@
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="imageusers form large-9 medium-8 columns content">
-    <?= $this->Form->create($imageuser) ?>
+<h1>Upload File</h1>
+<div class="imageuser form large-9 medium-8 columns content">
+    <?= $this->Form->create($imageuser, ['type' => 'file']) ?>
     <fieldset>
-        <legend><?= __('Add Imageuser') ?></legend>
+        <legend><?= __('Ajouter Image') ?></legend>
         <?php
-            echo $this->Form->control('emplacementImage');
+            echo $this->Form->control('ImageUsers', ['type' => 'file']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

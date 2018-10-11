@@ -21,6 +21,11 @@ class ImageusersController extends AppController
     public function index()
     {
         $imageusers = $this->paginate($this->Imageusers);
+		
+		$files = $this->Imageusers->find('all', ['order' => ['Imageusers.created' => 'DESC']]);
+        $filesRowNum = $files->count();
+        $this->set('files',$files);
+        $this->set('filesRowNum',$filesRowNum);
 
         $this->set(compact('imageusers'));
     }
@@ -50,14 +55,36 @@ class ImageusersController extends AppController
     {
         $imageuser = $this->Imageusers->newEntity();
         if ($this->request->is('post')) {
-            $imageuser = $this->Imageusers->patchEntity($imageuser, $this->request->getData());
-            if ($this->Imageusers->save($imageuser)) {
-                $this->Flash->success(__('The imageuser has been saved.'));
+			if (!empty($this->request->getData('ImageUsers.name'))) {
+			
+			$imageName = $this->request->getData('ImageUsers.name');
+            $uploadPath = 'img/';
+            $uploadFile = $uploadPath.$imageName;
+			
+				if (move_uploaded_file($this->request->getdata('ImageUsers.tmp_name'), $uploadFile)) {
+                    $imageuser = $this->Imageusers->patchEntity($imageuser, $this->request->getData());
+                    $this->log($imageuser);
+					
+                    $imageuser->emplacementImage = $imageName;
+                    $imageuser->path = $uploadPath;
+					
+					$this->log($this->request->getData());
+                    $this->log($imageuser);
 
-                return $this->redirect(['action' => 'index']);
+                    if ($this->Imageusers->save($imageuser)) {
+                        $this->Flash->success(__('File has been uploaded and inserted successfully.'));
+                        return $this->redirect(['action' => 'index']);
+                    } else {
+                        $this->Flash->error(__('Erreur de telechargement, veuillez reessayer'));
+                    }
+				} else {
+					$this->Flash->error(__('Unable to upload file, please try again.'));
+				}
+            } else {
+                $this->Flash->error(__('Please choose a file to upload.'));
             }
-            $this->Flash->error(__('The imageuser could not be saved. Please, try again.'));
-        }
+		}
+			
         $this->set(compact('imageuser'));
     }
 

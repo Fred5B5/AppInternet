@@ -43,10 +43,6 @@
             <td><?= h($user->Nom_Usager) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($user->password) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Typeuser') ?></th>
             <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
         </tr>

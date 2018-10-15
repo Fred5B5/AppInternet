@@ -37,7 +37,6 @@
                 <th scope="col"><?= __('Email') ?></th>
                 <th scope="col"><?= __('Prenom Usager') ?></th>
                 <th scope="col"><?= __('Nom Usager') ?></th>
-                <th scope="col"><?= __('Password') ?></th>
                 <th scope="col"><?= __('Typeuser Id') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -50,7 +49,6 @@
                 <td><?= h($users->email) ?></td>
                 <td><?= h($users->Prenom_Usager) ?></td>
                 <td><?= h($users->Nom_Usager) ?></td>
-                <td><?= h($users->password) ?></td>
                 <td><?= h($users->typeuser_id) ?></td>
                 <td><?= h($users->created) ?></td>
                 <td><?= h($users->modified) ?></td>

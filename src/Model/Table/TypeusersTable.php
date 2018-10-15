@@ -34,7 +34,7 @@ class TypeusersTable extends Table
         parent::initialize($config);
 
         $this->setTable('typeusers');
-        $this->setDisplayField('id');
+        $this->setDisplayField('TypeUsager');
         $this->setPrimaryKey('id');
 
         $this->hasMany('Users', [

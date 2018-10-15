@@ -32,7 +32,7 @@ class EmplacementsTable extends Table
         parent::initialize($config);
 
         $this->setTable('emplacements');
-        $this->setDisplayField('id');
+        $this->setDisplayField('Nom_Emplacement');
         $this->setPrimaryKey('id');
     }
 

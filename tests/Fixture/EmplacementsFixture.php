@@ -17,15 +17,12 @@ class EmplacementsFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 16, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'Nom_Emplacement' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'Accronyme_Emplacement' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
+        'nom_emplacement' => ['type' => 'text', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null, 'collate' => null],
+        'accronyme_emplacement' => ['type' => 'text', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null, 'collate' => null],
+		'actif' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => 0, 'precision' => null, 'comment' => null, 'collate' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-        ],
-        '_options' => [
-            'engine' => 'InnoDB',
-            'collation' => 'utf8_general_ci'
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -40,9 +37,16 @@ class EmplacementsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'Nom_Emplacement' => 'Lorem ipsum dolor sit amet',
-                'Accronyme_Emplacement' => 'Lorem ipsum dolor sit amet'
-            ],
+                'nom_emplacement' => 'nomEmplacementTest',
+                'accronyme_emplacement' => 'accoTest',
+				'actif' => '1'
+			],
+			[
+                'id' => 2,
+                'nom_emplacement' => 'nomEmplacementTest2',
+                'accronyme_emplacement' => 'accoTest2',
+				'actif' => '0'
+			],
         ];
         parent::init();
     }

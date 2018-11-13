@@ -9,12 +9,12 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit User'), ['action' => 'edit', $user->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('List users'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Imageusers'), ['controller' => 'Imageusers', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'Imageusers', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List typeusers'), ['controller' => 'typeusers', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'typeusers', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List imageusers'), ['controller' => 'imageusers', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'imageusers', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?> </li>
     </ul>
@@ -22,9 +22,9 @@
 <div class="users view large-9 medium-8 columns content">
     <h3><?= h($user->username) ?></h3>
 	<?php $imageid = $this->Number->format($user->imageuser_id);
-				$images = $Imageusers->toArray();
+				$images = $imageusers->toArray();
 				$key = array_search($imageid, $images)?>
-				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
+				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementimage']?>" alt="CakePHP" /></td>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
@@ -36,19 +36,19 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Prenom Usager') ?></th>
-            <td><?= h($user->Prenom_Usager) ?></td>
+            <td><?= h($user->prenom_usager) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Nom Usager') ?></th>
-            <td><?= h($user->Nom_Usager) ?></td>
+            <td><?= h($user->nom_usager) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Typeuser') ?></th>
-            <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
+            <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Imageuser') ?></th>
-            <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->emplacementImage, ['controller' => 'Imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
+            <td><?= $user->has('imageuser') ? $this->Html->link($user->imageuser->emplacementimage, ['controller' => 'imageusers', 'action' => 'view', $user->imageuser->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

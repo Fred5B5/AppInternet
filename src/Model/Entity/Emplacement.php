@@ -7,8 +7,8 @@ use Cake\ORM\Entity;
  * Emplacement Entity
  *
  * @property int $id
- * @property string $Nom_Emplacement
- * @property string $Accronyme_Emplacement
+ * @property string $nom_emplacement
+ * @property string $accronyme_emplacement
  */
 class Emplacement extends Entity
 {
@@ -23,7 +23,7 @@ class Emplacement extends Entity
      * @var array
      */
     protected $_accessible = [
-        'Nom_Emplacement' => true,
-        'Accronyme_Emplacement' => true
+        'nom_emplacement' => true,
+        'accronyme_emplacement' => true
     ];
 }

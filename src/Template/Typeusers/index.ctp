@@ -17,14 +17,14 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('TypeUsager') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($typeusers as $typeuser): ?>
             <tr>
-                <td><?= h($typeuser->TypeUsager) ?></td>
+                <td><?= $this->Number->format($typeuser->id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $typeuser->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $typeuser->id]) ?>

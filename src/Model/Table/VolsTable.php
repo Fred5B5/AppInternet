@@ -65,22 +65,22 @@ class VolsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         $validator
-            ->dateTime('HeureDepart')
-            ->requirePresence('HeureDepart', 'create')
-            ->notEmpty('HeureDepart');
+            ->scalar('heuredepart')
+            ->requirePresence('heuredepart', 'create')
+            ->notEmpty('heuredepart');
 
         $validator
-            ->dateTime('HeureArriver')
-            ->requirePresence('HeureArriver', 'create')
-            ->notEmpty('HeureArriver');
+            ->scalar('heurearriver')
+            ->requirePresence('heurearriver', 'create')
+            ->notEmpty('heurearriver');
 
         $validator
-            ->integer('PrixEconomique')
-            ->allowEmpty('PrixEconomique');
+            ->integer('prixeconomique')
+            ->allowEmpty('prixeconomique');
 
         return $validator;
     }

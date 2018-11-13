@@ -38,7 +38,7 @@ class UsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('username');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
@@ -65,12 +65,11 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('username')
-            ->maxLength('username', 48)
             ->requirePresence('username', 'create')
             ->notEmpty('username');
 
@@ -80,22 +79,23 @@ class UsersTable extends Table
             ->notEmpty('email');
 
         $validator
-            ->scalar('Prenom_Usager')
-            ->maxLength('Prenom_Usager', 48)
-            ->requirePresence('Prenom_Usager', 'create')
-            ->notEmpty('Prenom_Usager');
+            ->scalar('prenom_usager')
+            ->requirePresence('prenom_usager', 'create')
+            ->notEmpty('prenom_usager');
 
         $validator
-            ->scalar('Nom_Usager')
-            ->maxLength('Nom_Usager', 48)
-            ->requirePresence('Nom_Usager', 'create')
-            ->notEmpty('Nom_Usager');
+            ->scalar('nom_usager')
+            ->requirePresence('nom_usager', 'create')
+            ->notEmpty('nom_usager');
 
         $validator
             ->scalar('password')
-            ->maxLength('password', 255)
             ->requirePresence('password', 'create')
             ->notEmpty('password');
+
+        $validator
+            ->scalar('codeconfirmation')
+            ->allowEmpty('codeconfirmation');
 
         return $validator;
     }

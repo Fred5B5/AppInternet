@@ -26,12 +26,24 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+    <?php
+        echo $this->Html->css([
+            'base.css',
+            'style.css',
+            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
+        ]);
+        ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+	<?php
+        echo $this->Html->script([
+            'https://code.jquery.com/jquery-1.12.4.js',
+            'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
+                ], ['block' => 'scriptLibraries']
+        );
+        ?>
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
@@ -47,14 +59,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         if ($loggeduser) {
                             
 							$user = $loggeduser['username'];?>
-							<li><?php echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loggeduser['id']]);?></li>
+							<li><?php echo $this->Html->link($user, ['controller' => 'users', 'action' => 'view', $loggeduser['id']]);?></li>
 							
 							<li><a href="/AppInternet/users/logout">Logout</a></li>
                             <?php
                         } else {
 							?>
-							<li><?php echo $this->Html->link('Login', ['controller' => 'Users', 'action' => 'login']);?></li>
-							<li><?php echo $this->Html->link("S'inscrire", ['controller' => 'Users', 'action' => 'add']);?></li>
+							<li><?php echo $this->Html->link('Login', ['controller' => 'users', 'action' => 'login']);?></li>
+							<li><?php echo $this->Html->link("S'inscrire", ['controller' => 'users', 'action' => 'add']);?></li>
 							<?php
                         }
                         ?>
@@ -72,6 +84,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	
 	} ?>
         <?= $this->fetch('content') ?>
+		<?= $this->fetch('scriptLibraries') ?>
+		<?= $this->fetch('scriptBottom') ?>
     </div>
     <footer>
     </footer>

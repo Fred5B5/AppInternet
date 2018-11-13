@@ -18,11 +18,11 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nom Emplacement') ?></th>
-            <td><?= h($emplacement->Nom_Emplacement) ?></td>
+            <td><?= h($emplacement->nom_emplacement) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Accronyme Emplacement') ?></th>
-            <td><?= h($emplacement->Accronyme_Emplacement) ?></td>
+            <td><?= h($emplacement->accronyme_emplacement) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

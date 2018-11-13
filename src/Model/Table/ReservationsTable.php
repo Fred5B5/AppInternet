@@ -61,7 +61,7 @@ class ReservationsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         return $validator;

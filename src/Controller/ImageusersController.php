@@ -21,7 +21,6 @@ class ImageusersController extends AppController
     public function index()
     {
         $imageusers = $this->paginate($this->Imageusers);
-		
 		$files = $this->Imageusers->find('all', ['order' => ['Imageusers.created' => 'DESC']]);
         $filesRowNum = $files->count();
         $this->set('files',$files);
@@ -55,23 +54,22 @@ class ImageusersController extends AppController
     {
         $imageuser = $this->Imageusers->newEntity();
         if ($this->request->is('post')) {
-			if (!empty($this->request->getData('ImageUsers.name'))) {
+			if (!empty($this->request->getData('Imageusers.name'))) {
 			
-			$imageName = $this->request->getData('ImageUsers.name');
-            $uploadPath = 'img/';
-            $uploadFile = $uploadPath.$imageName;
-			
-				if (move_uploaded_file($this->request->getdata('ImageUsers.tmp_name'), $uploadFile)) {
-                    $imageuser = $this->Imageusers->patchEntity($imageuser, $this->request->getData());
-                    $this->log($imageuser);
+				$imagename = $this->request->getData('Imageusers.name');
+				$uploadPath = 'img/';
+				$uploadFile = $uploadPath.$imagename;
+				
+				if (move_uploaded_file($this->request->getdata('Imageusers.tmp_name'), $uploadFile)) {
+					$imageuser = $this->Imageusers->patchEntity($imageuser, $this->request->getData());
 					
-                    $imageuser->emplacementImage = $imageName;
-                    $imageuser->path = $uploadPath;
-					
+					$imageuser->emplacementimage = $imagename;
+					$imageuser->path = $uploadPath;
+						
 					$this->log($this->request->getData());
-                    $this->log($imageuser);
+					$this->log($imageuser);
 
-                    if ($this->Imageusers->save($imageuser)) {
+					if ($this->imageusers->save($imageuser)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
                         return $this->redirect(['action' => 'index']);
                     } else {
@@ -80,11 +78,10 @@ class ImageusersController extends AppController
 				} else {
 					$this->Flash->error(__('Unable to upload file, please try again.'));
 				}
-            } else {
-                $this->Flash->error(__('Please choose a file to upload.'));
-            }
+			} else {
+				$this->Flash->error(__('Please choose a file to upload.'));   																			
+			}
 		}
-			
         $this->set(compact('imageuser'));
     }
 

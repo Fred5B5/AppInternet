@@ -21,8 +21,8 @@
     <fieldset>
         <legend><?= __('Edit Emplacement') ?></legend>
         <?php
-            echo $this->Form->control('Nom_Emplacement');
-            echo $this->Form->control('Accronyme_Emplacement');
+            echo $this->Form->control('nom_emplacement');
+            echo $this->Form->control('accronyme_emplacement');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

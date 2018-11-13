@@ -27,9 +27,9 @@
         <?php
             echo $this->Form->control('emplacementdepart_id', ['options' => $emplacements]);
             echo $this->Form->control('emplacementfin_id', ['options' => $emplacements]);
-            echo $this->Form->control('HeureDepart');
-            echo $this->Form->control('HeureArriver');
-            echo $this->Form->control('PrixEconomique');
+            echo $this->Form->control('heuredepart');
+            echo $this->Form->control('heurearriver');
+            echo $this->Form->control('prixeconomique');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

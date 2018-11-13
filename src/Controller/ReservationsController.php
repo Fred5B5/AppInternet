@@ -13,7 +13,7 @@ use App\Controller\AppController;
 class ReservationsController extends AppController
 {
 
-	public function isAuthorized($user)
+  public function isAuthorized($user)
 	{
 		$action = $this->request->getParam('action');
 		// Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
@@ -38,7 +38,6 @@ class ReservationsController extends AppController
 		
 		return $reservation->user_id === $user['id'];
 	}
-
     /**
      * Index method
      *
@@ -80,7 +79,7 @@ class ReservationsController extends AppController
         $reservation = $this->Reservations->newEntity();
         if ($this->request->is('post')) {
             $reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
-			$reservation->user_id = $this->Auth->user('id');
+			$reservation->user_id = $this->Auth->user('id');									   
             if ($this->Reservations->save($reservation)) {
                 $this->Flash->success(__('The reservation has been saved.'));
 

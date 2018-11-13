@@ -9,11 +9,11 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int $emplacementdepart_id
  * @property int $emplacementfin_id
- * @property \Cake\I18n\FrozenTime $HeureDepart
- * @property \Cake\I18n\FrozenTime $HeureArriver
- * @property int $PrixEconomique
- * @property \Cake\I18n\FrozenTime $created
- * @property \Cake\I18n\FrozenTime $modified
+ * @property string $heuredepart
+ * @property string $heurearriver
+ * @property int $prixeconomique
+ * @property string $created
+ * @property string $modified
  *
  * @property \App\Model\Entity\Emplacement $emplacement
  * @property \App\Model\Entity\Reservation[] $reservations
@@ -33,9 +33,9 @@ class Vol extends Entity
     protected $_accessible = [
         'emplacementdepart_id' => true,
         'emplacementfin_id' => true,
-        'HeureDepart' => true,
-        'HeureArriver' => true,
-        'PrixEconomique' => true,
+        'heuredepart' => true,
+        'heurearriver' => true,
+        'prixeconomique' => true,
         'created' => true,
         'modified' => true,
         'emplacement' => true,

@@ -7,7 +7,7 @@ use Cake\ORM\Entity;
  * Typeuser Entity
  *
  * @property int $id
- * @property string $TypeUsager
+ * @property string $typeusager
  *
  * @property \App\Model\Entity\User[] $users
  */
@@ -24,7 +24,7 @@ class Typeuser extends Entity
      * @var array
      */
     protected $_accessible = [
-        'TypeUsager' => true,
+        'typeusager' => true,
         'users' => true
     ];
 }

@@ -32,7 +32,7 @@ class EmplacementsTable extends Table
         parent::initialize($config);
 
         $this->setTable('emplacements');
-        $this->setDisplayField('Nom_Emplacement');
+        $this->setDisplayField('nom_emplacement');
         $this->setPrimaryKey('id');
     }
 
@@ -45,20 +45,18 @@ class EmplacementsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('Nom_Emplacement')
-            ->maxLength('Nom_Emplacement', 255)
-            ->requirePresence('Nom_Emplacement', 'create')
-            ->notEmpty('Nom_Emplacement');
+            ->scalar('nom_emplacement')
+            ->requirePresence('nom_emplacement', 'create')
+            ->notEmpty('nom_emplacement');
 
         $validator
-            ->scalar('Accronyme_Emplacement')
-            ->maxLength('Accronyme_Emplacement', 255)
-            ->requirePresence('Accronyme_Emplacement', 'create')
-            ->notEmpty('Accronyme_Emplacement');
+            ->scalar('accronyme_emplacement')
+            ->requirePresence('accronyme_emplacement', 'create')
+            ->notEmpty('accronyme_emplacement');
 
         return $validator;
     }

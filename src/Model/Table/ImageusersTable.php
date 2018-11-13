@@ -19,9 +19,12 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Imageuser patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Imageuser[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Imageuser findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class ImageusersTable extends Table
 {
+
     /**
      * Initialize method
      *
@@ -36,10 +39,11 @@ class ImageusersTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->addBehavior('Timestamp');
+
         $this->hasMany('Users', [
             'foreignKey' => 'imageuser_id'
         ]);
-		$this->addBehavior('Timestamp');
     }
 
     /**
@@ -51,14 +55,18 @@ class ImageusersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('emplacementImage')
-            ->maxLength('emplacementImage', 255)
-            ->requirePresence('emplacementImage', 'create')
-            ->notEmpty('emplacementImage');
+            ->scalar('emplacementimage')
+            ->requirePresence('emplacementimage', 'create')
+            ->notEmpty('emplacementimage');
+
+        $validator
+            ->scalar('path')
+            ->requirePresence('path', 'create')
+            ->notEmpty('path');
 
         return $validator;
     }

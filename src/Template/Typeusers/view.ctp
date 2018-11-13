@@ -16,13 +16,13 @@
     </ul>
 </nav>
 <div class="typeusers view large-9 medium-8 columns content">
-    <h3><?= h($typeuser->id) ?></h3>
+    <h3><?= h($typeuser->TypeUsager) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('TypeUsager') ?></th>
-            <td><?= h($typeuser->TypeUsager) ?></td>
-        </tr>
-        <tr>
+		<th scope="row"><?= __('Typeusager') ?></th>
+        <td><?= $this->Text->autoParagraph($typeuser->typeusager); ?></td>
+		</tr>
+		<tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($typeuser->id) ?></td>
         </tr>
@@ -47,8 +47,8 @@
                 <td><?= h($users->id) ?></td>
                 <td><?= h($users->username) ?></td>
                 <td><?= h($users->email) ?></td>
-                <td><?= h($users->Prenom_Usager) ?></td>
-                <td><?= h($users->Nom_Usager) ?></td>
+                <td><?= h($users->prenom_usager) ?></td>
+                <td><?= h($users->nom_usager) ?></td>
                 <td><?= h($users->typeuser_id) ?></td>
                 <td><?= h($users->created) ?></td>
                 <td><?= h($users->modified) ?></td>

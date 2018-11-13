@@ -23,7 +23,7 @@
     <fieldset>
         <legend><?= __('Edit Typeuser') ?></legend>
         <?php
-            echo $this->Form->control('TypeUsager');
+            echo $this->Form->control('typeusager');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

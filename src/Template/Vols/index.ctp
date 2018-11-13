@@ -22,9 +22,9 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('emplacementdepart_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('emplacementfin_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('HeureDepart') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('HeureArriver') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('PrixEconomique') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('heuredepart') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('heurearriver') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('prixeconomique') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -33,12 +33,28 @@
         <tbody>
             <?php foreach ($vols as $vol): ?>
             <tr>
+					<?php 
+					$nomEmplacementun;
+					$nomEmplacementDeux;
+					foreach($emplacements as $emplacementAct ) {
+						if ($emplacementAct->id == $vol->emplacementdepart_id) {
+							$nomEmplacementun = $emplacementAct->nom_emplacement;
+						}
+					}
+					foreach($emplacements as $emplacementAct ) {
+						if ($emplacementAct->id == $vol->emplacementfin_id) {
+							$nomEmplacementDeux = $emplacementAct->nom_emplacement;
+						}
+					}
+				
+				
+				?>
                 <td><?= $this->Number->format($vol->id) ?></td>
-                <td><?= $this->Number->format($vol->emplacementdepart_id) ? $this->Html->link($vol->emplacementdepart_id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementdepart_id]) : '' ?></td>></td>
-                <td><?= $vol->has('emplacement') ? $this->Html->link($vol->emplacement->id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacement->id]) : '' ?></td>
-                <td><?= h($vol->HeureDepart) ?></td>
-                <td><?= h($vol->HeureArriver) ?></td>
-                <td><?= $this->Number->format($vol->PrixEconomique) ?></td>
+                <td><?= $this->Number->format($vol->emplacementdepart_id) ? $this->Html->link($nomEmplacementun, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementdepart_id]) : '' ?></td>></td>
+                <td><?= $this->Number->format($vol->emplacementfin_id) ? $this->Html->link($nomEmplacementDeux, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementfin_id]) : '' ?></td>></td>
+                <td><?= h($vol->heuredepart) ?></td>
+                <td><?= h($vol->heurearriver) ?></td>
+                <td><?= $this->Number->format($vol->prixeconomique) ?></td>
                 <td><?= h($vol->created) ?></td>
                 <td><?= h($vol->modified) ?></td>
                 <td class="actions">

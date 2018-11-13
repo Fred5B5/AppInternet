@@ -38,6 +38,42 @@ class EmplacementsTableTest extends TestCase
         $config = TableRegistry::getTableLocator()->exists('Emplacements') ? [] : ['className' => EmplacementsTable::class];
         $this->Emplacements = TableRegistry::getTableLocator()->get('Emplacements', $config);
     }
+	
+	public function testFindActif()
+    {
+        $query = $this->Companies->find('active');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                'id' => 1,
+                'name' => 'test1',
+                'address' => 'test1',
+                'city' => 'test1',
+                'province' => 'test1',
+                'postal_code' => 'test1',
+                'administrative_region' => 'test1',
+                'active' => 1,
+                'phone' => '1234567890',
+                'email' => 'test1@test1.com',
+                'user_id' => 1
+            ],
+            [
+                'id' => 2,
+                'name' => 'test2',
+                'address' => 'test2',
+                'city' => 'test2',
+                'province' => 'test2',
+                'postal_code' => 'test2',
+                'administrative_region' => 'test2',
+                'active' => 1,
+                'phone' => '9876543210',
+                'email' => 'test2@test2.com',
+                'user_id' => 1
+            ]
+        ];
+         $this->assertEquals($expected, $result);
+    }
 
     /**
      * tearDown method

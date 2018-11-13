@@ -7,12 +7,16 @@ use Cake\ORM\Entity;
  * Imageuser Entity
  *
  * @property int $id
- * @property string $emplacementImage
+ * @property string $emplacementimage
+ * @property string $path
+ * @property string $created
+ * @property string $modified
  *
  * @property \App\Model\Entity\User[] $users
  */
 class Imageuser extends Entity
 {
+
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -23,7 +27,10 @@ class Imageuser extends Entity
      * @var array
      */
     protected $_accessible = [
-        'emplacementImage' => true,
+        'emplacementimage' => true,
+        'path' => true,
+        'created' => true,
+        'modified' => true,
         'users' => true
     ];
 }

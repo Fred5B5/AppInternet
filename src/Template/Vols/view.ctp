@@ -17,8 +17,26 @@
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
+
+<?php 
+					$nomEmplacementun;
+					$nomEmplacementDeux;
+					foreach($emplacements as $emplacementAct ) {
+						if ($emplacementAct->id == $vol->emplacementdepart_id) {
+							$nomEmplacementun = $emplacementAct->nom_emplacement;
+						}
+					}
+					foreach($emplacements as $emplacementAct ) {
+						if ($emplacementAct->id == $vol->emplacementfin_id) {
+							$nomEmplacementDeux = $emplacementAct->nom_emplacement;
+						}
+					}
+				
+				
+				?>
 <div class="vols view large-9 medium-8 columns content">
     <h3><?= h($vol->id) ?></h3>
+	<?= $this->Form->postButton('Print en PDF', ['controller' => 'Vols', 'action' => 'actoionPrintPdf', $vol->id]) ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Id') ?></th>
@@ -26,23 +44,23 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Emplacementdepart Id') ?></th>
-            <td><?= $this->Number->format($vol->emplacementdepart_id) ? $this->Html->link($vol->emplacementdepart_id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementdepart_id]) : '' ?></td>></td>
+            <td><?= $this->Number->format($vol->emplacementdepart_id) ? $this->Html->link($nomEmplacementun, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementdepart_id]) : '' ?></td>></td>
         </tr>
 		<tr>
             <th scope="row"><?= __('Emplacementfin Id') ?></th>
-            <td><?= $vol->has('emplacement') ? $this->Html->link($vol->emplacement->id, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacement->id]) : '' ?></td>
+            <td><?= $this->Number->format($vol->emplacementfin_id) ? $this->Html->link($nomEmplacementDeux, ['controller' => 'Emplacements', 'action' => 'view', $vol->emplacementfin_id]) : '' ?></td>></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('PrixEconomique') ?></th>
-            <td><?= $this->Number->format($vol->PrixEconomique) ?></td>
+            <th scope="row"><?= __('prixeconomique') ?></th>
+            <td><?= $this->Number->format($vol->prixeconomique) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('HeureDepart') ?></th>
-            <td><?= h($vol->HeureDepart) ?></td>
+            <th scope="row"><?= __('heuredepart') ?></th>
+            <td><?= h($vol->heuredepart) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('HeureArriver') ?></th>
-            <td><?= h($vol->HeureArriver) ?></td>
+            <th scope="row"><?= __('heurearriver') ?></th>
+            <td><?= h($vol->heurearriver) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

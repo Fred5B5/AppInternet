@@ -1,7 +1,6 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\ORM\Behavior\Translate\TranslateTrait;
 use Cake\ORM\Entity;
 
 /**
@@ -10,16 +9,14 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int $user_id
  * @property int $vol_id
- * @property \Cake\I18n\FrozenTime $created
- * @property \Cake\I18n\FrozenTime $modified
+ * @property string $created
+ * @property string $modified
  *
  * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Vol $vol
  */
 class Reservation extends Entity
 {
-	
-	use TranslateTrait;
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().

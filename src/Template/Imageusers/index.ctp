@@ -2,8 +2,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Imageuser'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List users'), ['controller' => 'users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'users', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <h1>Uploaded Files</h1>
@@ -19,7 +19,7 @@
         <?php if($filesRowNum > 0):$count = 0; foreach($files as $file): $count++;?>
         <tr>
             <td><?php echo $count; ?></td>
-            <td><embed src="/AppInternet/webroot/img/<?= $file->emplacementImage ?>" width="220px" height="150px"></td>
+            <td><embed src="/AppInternet/webroot/img/<?= $file->emplacementimage ?>" width="220px" height="150px"></td>
             <td><?php echo $file->created; ?></td>
 			<td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $file->id]) ?>

@@ -1,7 +1,6 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\Entity;
 
 /**
@@ -10,13 +9,14 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $username
  * @property string $email
- * @property string $Prenom_Usager
- * @property string $Nom_Usager
+ * @property string $prenom_usager
+ * @property string $nom_usager
  * @property string $password
  * @property int $typeuser_id
  * @property int $imageuser_id
- * @property \Cake\I18n\FrozenTime $created
- * @property \Cake\I18n\FrozenTime $modified
+ * @property string $created
+ * @property string $modified
+ * @property string $codeconfirmation
  *
  * @property \App\Model\Entity\Typeuser $typeuser
  * @property \App\Model\Entity\Imageuser $imageuser
@@ -24,14 +24,6 @@ use Cake\ORM\Entity;
  */
 class User extends Entity
 {
-
-	protected function _setPassword($value)
-    {
-        if (strlen($value)) {
-            $hasher = new DefaultPasswordHasher();
-             return $hasher->hash($value);
-        }
-    }
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -45,13 +37,14 @@ class User extends Entity
     protected $_accessible = [
         'username' => true,
         'email' => true,
-        'Prenom_Usager' => true,
-        'Nom_Usager' => true,
+        'prenom_usager' => true,
+        'nom_usager' => true,
         'password' => true,
         'typeuser_id' => true,
         'imageuser_id' => true,
         'created' => true,
         'modified' => true,
+        'codeconfirmation' => true,
         'typeuser' => true,
         'imageuser' => true,
         'reservations' => true

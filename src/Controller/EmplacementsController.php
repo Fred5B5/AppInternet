@@ -16,7 +16,7 @@ class EmplacementsController extends AppController
 public function initialize()
 	{
 		parent::initialize();
-		$this->Auth->allow(['index', 'view']);
+		$this->Auth->allow(['index', 'view', 'findName', 'autocompleteemplacements']);
 	}
 
 		public function isAuthorized($user)
@@ -40,6 +40,24 @@ public function initialize()
 		
 		return false;
 	}
+	
+	public function findName() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Emplacements->find('all', array(
+                'conditions' => array('emplacements.nom_emplacement LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['nom_emplacement'], 'value' => $result['nom_emplacement']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
 
     /**
      * Index method
@@ -131,5 +149,12 @@ public function initialize()
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+	public function findActif(Query $query, array $options)
+    {
+        $query->where([
+            $this->alias() . '.actif' => 1
+        ]);
+        return $query;
     }
 }

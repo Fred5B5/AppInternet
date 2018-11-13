@@ -34,7 +34,7 @@ class TypeusersTable extends Table
         parent::initialize($config);
 
         $this->setTable('typeusers');
-        $this->setDisplayField('TypeUsager');
+        $this->setDisplayField('typeusager');
         $this->setPrimaryKey('id');
 
         $this->hasMany('Users', [
@@ -51,14 +51,13 @@ class TypeusersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('id')
+            ->integer('id')
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('TypeUsager')
-            ->maxLength('TypeUsager', 128)
-            ->requirePresence('TypeUsager', 'create')
-            ->notEmpty('TypeUsager');
+            ->scalar('typeusager')
+            ->requirePresence('typeusager', 'create')
+            ->notEmpty('typeusager');
 
         return $validator;
     }

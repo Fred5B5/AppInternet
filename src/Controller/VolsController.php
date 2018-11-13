@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Console\ShellDispatcher;
 
 /**
  * Vols Controller
@@ -40,12 +41,10 @@ class VolsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Emplacements']
-        ];
+		$this->loadModel('Emplacements');
         $vols = $this->paginate($this->Vols);
-
-        $this->set(compact('vols'));
+		$emplacements = $this->paginate($this->Emplacements);		
+        $this->set(compact('vols', 'emplacements'));
     }
 
     /**
@@ -57,11 +56,27 @@ class VolsController extends AppController
      */
     public function view($id = null)
     {
+		$this->loadModel('Emplacements');
         $vol = $this->Vols->get($id, [
-            'contain' => ['Emplacements', 'Reservations']
+            'contain' => ['Reservations']
         ]);
-
-        $this->set('vol', $vol);
+        $vols = $this->paginate($this->Vols);
+		$emplacements = $this->paginate($this->Emplacements);		
+        $this->set(compact('vol', $vol, 'emplacements'));
+    }
+	
+	public function actoionPrintPdf($id)
+    {
+		$shell = new ShellDispatcher();
+		$output = $shell->run(['cake', 'printPdf', 'http://localhost/AppInternet/vols/view/'.$id]);
+	 
+		if (0 === $output) {
+			$this->Flash->success('Successfully printed in PDF.');
+		} else {
+			$this->Flash->error('Failed to print in PDF.');
+		}
+	 
+		return $this->redirect('/');
     }
 
     /**

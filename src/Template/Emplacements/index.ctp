@@ -1,4 +1,14 @@
 <?php
+$urlToCarsAutocompletedemoJson = $this->Url->build([
+    "controller" => "Emplacements",
+    "action" => "findName",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToCarsAutocompletedemoJson . '";', ['block' => true]);
+echo $this->Html->script('Emplacements/autocompleteemplacements', ['block' => 'scriptBottom']);
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Emplacement[]|\Cake\Collection\CollectionInterface $emplacements
@@ -12,12 +22,18 @@
 </nav>
 <div class="emplacements index large-9 medium-8 columns content">
     <h3><?= __('Emplacements') ?></h3>
+	<fieldset>
+    <legend><?= __('Search emplacement name') ?></legend>
+    <?php
+    echo $this->Form->input('nom_emplacement', ['id' => 'autocomplete']);
+    ?>
+</fieldset>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Nom_Emplacement') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Accronyme_Emplacement') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('nom_emplacement') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('accronyme_emplacement') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -25,8 +41,8 @@
             <?php foreach ($emplacements as $emplacement): ?>
             <tr>
                 <td><?= $this->Number->format($emplacement->id) ?></td>
-                <td><?= h($emplacement->Nom_Emplacement) ?></td>
-                <td><?= h($emplacement->Accronyme_Emplacement) ?></td>
+                <td><?= h($emplacement->nom_emplacement) ?></td>
+                <td><?= h($emplacement->accronyme_emplacement) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $emplacement->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $emplacement->id]) ?>

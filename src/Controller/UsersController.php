@@ -2,7 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Mailer\Email;
+		use Cake\Mailer\Email;
 use Cake\Utility\Text;
 
 Email::setConfigTransport('hotmail', [
@@ -12,7 +12,7 @@ Email::setConfigTransport('hotmail', [
     'password' => 'Jyp_909090',
     'className' => 'Smtp',
 	'tls' => true
-]);
+]);			  
 
 /**
  * Users Controller
@@ -23,8 +23,7 @@ Email::setConfigTransport('hotmail', [
  */
 class UsersController extends AppController
 {
-	
-	public function isAuthorized($user)
+ public function isAuthorized($user)
 	{
 		$action = $this->request->getParam('action');
 
@@ -78,8 +77,7 @@ class UsersController extends AppController
             'contain' => ['Typeusers', 'Imageusers']
         ];
         $users = $this->paginate($this->Users);
-		
-		$this->set('Imageusers', $this->Users->Imageusers->find('all'));
+	$this->set('imageusers', $this->Users->Imageusers->find('all'));
 
         $this->set(compact('users'));
     }
@@ -97,7 +95,7 @@ class UsersController extends AppController
             'contain' => ['Typeusers', 'Imageusers', 'Reservations']
         ]);
 		
-		$this->set('Imageusers', $this->Users->Imageusers->find('all'));
+		$this->set('imageusers', $this->Users->imageUsers->find('all'));
 
         $this->set('user', $user);
     }
@@ -113,9 +111,10 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
 			$user->typeuser_id = '1';
-			$user->codeConfirmation = Text::uuid();
+			$user->codeconfirmation = Text::uuid();
 			$email = new Email('default');
-			$email->to($user->email)->subject('Essai de CakePHP Mailer')->send($user->codeConfirmation);
+			$email->to($user->email)->subject('Essai de CakePHP Mailer')->send($user->codeconfirmation);
+							
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
@@ -145,7 +144,7 @@ class UsersController extends AppController
 				$user = $this->Users->patchEntity($user, $this->request->getData());
 			} else {
 				$user = $this->Users->patchEntity($user, $this->request->getData(), ['accessibleFields' => ['typeuser_id' => false]]);
-			}
+			}										  
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

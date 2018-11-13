@@ -8,23 +8,23 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Typeusers'), ['controller' => 'Typeusers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'Typeusers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Imageusers'), ['controller' => 'Imageusers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'Imageusers', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List typeusers'), ['controller' => 'typeusers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Typeuser'), ['controller' => 'typeusers', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List imageusers'), ['controller' => 'imageusers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Imageuser'), ['controller' => 'imageusers', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Reservations'), ['controller' => 'Reservations', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Reservation'), ['controller' => 'Reservations', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">
-    <h3><?= __('Users') ?></h3>
+    <h3><?= __('users') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('username') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Prenom_Usager') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Nom_Usager') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('prenom_usager') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('nom_usager') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('typeuser_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('imageuser_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -37,13 +37,13 @@
             <tr>
                 <td><?= h($user->username) ?></td>
                 <td><?= h($user->email) ?></td>
-                <td><?= h($user->Prenom_Usager) ?></td>
-                <td><?= h($user->Nom_Usager) ?></td>
-                <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'Typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
+                <td><?= h($user->prenom_usager) ?></td>
+                <td><?= h($user->nom_usager) ?></td>
+                <td><?= $user->has('typeuser') ? $this->Html->link($user->typeuser->id, ['controller' => 'typeusers', 'action' => 'view', $user->typeuser->id]) : '' ?></td>
                 <?php $imageid = $this->Number->format($user->imageuser_id);
-				$images = $Imageusers->toArray();
+				$images = $imageusers->toArray();
 				$key = array_search($imageid, $images)?>
-				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementImage']?>" alt="CakePHP" /></td>
+				<td><img src="/AppInternet/webroot/img/<?= $images[$key]['emplacementimage']?>" alt="CakePHP" /></td>
                 <td><?= h($user->created) ?></td>
                 <td><?= h($user->modified) ?></td>
                 <td class="actions">

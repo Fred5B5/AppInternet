@@ -300,3 +300,123 @@ Stack Trace:
 #2 {main}
 
 
+2018-11-13 23:34:35 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:34:35 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:35:08 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:35:08 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:35:09 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:35:09 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:35:09 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:35:09 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:35:09 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:35:09 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:35:10 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:35:10 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:37:28 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:37:28 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 23:38:15 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 23:38:15 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 E:\AMPPS\Ampps\www\AppInternet\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'E:\\AMPPS\\Ampps\\...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

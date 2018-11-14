@@ -26,7 +26,9 @@ class EmplacementsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$this->session($this->AuthAdmin);
+        $this->get('/emplacements');
+        $this->assertResponseOk();
     }
 
     /**
@@ -36,7 +38,10 @@ class EmplacementsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session($this->AuthAdmin);
+        $this->get('/emplacements/view/1');
+        $this->assertResponseContains('1');
+        $this->assertResponseOk();
     }
 
     /**
@@ -46,7 +51,23 @@ class EmplacementsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session($this->AuthAdmin);
+        $this->get('/emplacements/add');
+        $this->assertResponseOk();
+        $data = [
+            'id' => null,
+            'nom_emplacement' => 'TestNom',
+            'accronyme_emplacement' => 'TEST',
+            'actif' => 1
+        ];
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+        $this->post('/emplacements/add', $data);
+
+		
+        $this->assertResponseSuccess();
+        $query = $this->emplacements->find('all', ['conditions' => ['emplacements.id' => $data['id']]]);
+        $this->assertNotEmpty($query);
     }
 
     /**
@@ -56,7 +77,19 @@ class EmplacementsControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session($this->AuthAdmin);
+        $newName = 'testname2';
+        $emplacements = $this->emplacements->find('all')->first();
+        $emplacements->name = $newName;
+        $emplacementId = $emplacements->id;
+		
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+        $this->post('/emplacements/edit/' . $emplacementId, $emplacement->toArray());
+		
+        $this->assertResponseSuccess();
+        $query = $this->emplacements->find('all', ['conditions' => ['emplacements.id' => $emplacementId]])->first();
+        $this->assertEquals($newName, $query->name);
     }
 
     /**
@@ -66,6 +99,12 @@ class EmplacementsControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session($this->AuthAdmin);
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+        $this->delete('/emplacements/delete/1');
+        $this->assertResponseSuccess();
+        $query = $this->emplacements->find('all', ['conditions' => ['emplacements.id' => 1]])->first();
+        $this->assertEmpty($query);
     }
 }
